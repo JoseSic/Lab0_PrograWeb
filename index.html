@@ -11,9 +11,9 @@
     <header>
         <div class = "container-fluid py-2" style="background-color: #050505;">
             <div class="container">
-                <h1 class="display-4 text-white"> Top 10 películas de terror</h1>
+                <h1 class="display-4 text-white" id="titulo"> Top 10 películas de terror</h1>
                 <hr style="border-color:red;">
-                <p class="lead text-white"> Te presentamos un top 10 de películas
+                <p class="lead text-white" id="descripcion"> Te presentamos un top 10 de películas
                     de terror que deberías ver. <br/>
                     Jala una soda y trae tus palomitas,
                     que será una noche de terror.</p>  
@@ -23,7 +23,7 @@
     <nav>
         <div class="container-fluid navbar-dark bg-dark">
             <nav class="navbar navbar-expand-lg container">
-                    <a class="navbar-brand" href="#">TERROR</a>
+                    <a class="navbar-brand" href="#"id="Te">TERROR</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,19 +31,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">BOTÓN1</a>
+                                <a class="nav-link" id="B1" href="#">BOTÓN1</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">BOTÓN2</a>
+                                <a class="nav-link" id="B2" href="#">BOTÓN2</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">BOTÓN3</a>
+                                <a class="nav-link" id="B3" href="#">BOTÓN3</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">BOTÓN4</a>
+                                <a class="nav-link" id="B4" href="#">BOTÓN4</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">BOTÓN5</a>
+                                <a class="nav-link" id="B5" href="#">BOTÓN5</a>
                             </li>
                         </ul>
                     </div>
@@ -59,11 +59,66 @@
                         </a>
                      </div>
     
+                    <!-- Modal -->
+                    <div class="modal fade" id="id1" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">[REC] 2007</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/1.jpg" alt=""width ="200" height="350">
+                                    <p> <strong>Sinopsis:</strong> Una reportera y su cámara están haciendo un reportaje en una estación de bomberos
+                                     con la intención de retratar la profesión de estos, su modo de vida y sus situaciones 
+                                     de riesgo. Pero mientras les acompañan en una de sus salidas nocturnas, lo que parecía 
+                                     una intervención rutinaria de rescate se va a convertir en un auténtico infierno. 
+                                     Atrapados en el interior de un edificio, la pareja de bomberos y el equipo de televisión
+                                    endrán que enfrentarse a un horror desconocido y letal. Algo siniestro y maligno que se 
+                                    está extendiendo sin control. Inesperadamente, las reglas han cambiado. Ahora, lo único que 
+                                    importa es esconderse, sobrevivir, tratar desesperadamente de escapar. Vencer al miedohasta 
+                                    que el miedo nos venza. Y seguir grabando. Pase lo que pase. Hasta el último momento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id2" .modal-body= "texto">
                             <img class="card-img-top"  src="img/2.jpg" alt="">
                         </a>
                      </div>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="id2" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">TRAIN TO BUSIAN</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/2.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis: </strong>El ocupado y divorciado ejecutivo Sok-woo (Yoo Gong)
+                                         y su hija Soo-ahn van a tomar un tren de alta velocidad que debe llevarles desde
+                                        Seúl a la ciudad de Busan, en el extremo sur del país. Sin embargo cuando se hallan 
+                                        en plena estación se desata una invasión de zombies que siembran el caos y abordan 
+                                        el tren. Confundidos, asustados y sin conductor los pasajeros del tren, ya en marcha, 
+                                        tendrán que hacer frente a la amenaza que asola el país. La película está escrita y 
+                                        dirigida por Sang-ho Yeon, conocido por otros títulos como 'Seoul Station' o 'The Fake'. 
+                                        Tiene entre su reparto a Yoo Gong como Seok Woo; Soo-an Kim como Soo-an; Yu-mi Jung en 
+                                        el papel de Sung Gyeong; Dong-seok Ma como Sang Hwa, entre otros. El director coreano 
+                                        Yeon Sang-ho ha sido galardonado en el Festival de Sitges con dos premios: a Mejor 
+                                        Director y a los Mejores Efectos Visuales. Además, fue seleccionada oficialmente en 
+                                        el Festival de Cannes y fue muy comentada y valorada por la crítica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id3" .modal-body= "texto">
@@ -71,11 +126,59 @@
                         </a>
                      </div>
     
+                    <!-- Modal -->
+                    <div class="modal fade" id="id3" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">GUERRA MUNDIAL Z</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/3.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis: </strong> Gerry Lane, un experto investigador de las 
+                                        Naciones Unidas, es forzado a tratar de parar una feroz infección viral, 
+                                        que podría suponer el fin del mundo. La voracidad de la epidemia y la 
+                                        rapidez con la que la raza humana puede ser potencialmente destruida 
+                                        lanza a Lane a una carrera contra el tiempo (y contra una legión de 
+                                        muertos vivientes), recorriendo el mundo entero en busca de respuestas 
+                                        sobre cómo parar la infección. A Lane le ha sido encomendada una vasta 
+                                        misión: salvar las vidas de millones de desconocidos. Protagonizada por 
+                                        Brad Pitt y dirigida por Marc Forster, 'Guerra Mundial Z' adapta la 
+                                        novela homónima de Max Brooks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id4" .modal-body= "texto">
                             <img class="card-img-top" src="img/4.jpg" alt="">
                         </a>
                      </div>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="id4" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">El Rito</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/4.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis:</strong> Inspirado en hechos reales, The Rite cuenta la historia de Michael Kovak, 
+                                    un seminarista escéptico, que asiste con reparos a la escuela de exorcismo
+                                    del Vaticano. Durante su estancia en Roma, conoce a un sacerdote nada ortodoxo, 
+                                    el Padre Lucas, quien le introduce al lado más oscuro de su fe.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
                     <div class="card"style=>
                         <a href="#" data-toggle="modal" data-target="#id5" .modal-body= "texto">
@@ -83,11 +186,62 @@
                         </a>
                      </div>
     
+                    <!-- Modal -->
+                    <div class="modal fade" id="id5" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">VERONICA</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/5.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis: </strong>Basada en hechos reales, 'Verónica' narra 
+                                        una historia acontecida en Madrid en los años 90. Inspirada en el 
+                                        extraño caso Vallecas, aún sin resolver, la película se centra en 
+                                        Verónica, una adolescente que co pagina el instituto con ayudar a 
+                                        su madre a cuidar de sus tres hermanos pequeños después de la trágica
+                                        muerte de su padre. Tras hacer una ouija con unas amigas, Verónica es 
+                                        asediada por presencias sobrenaturales que quieren hacerle daño a ella 
+                                        y a su familia. La película está dirigida por Paco Plaza, autor de las 
+                                        películas de REC y cuenta con un reparto formado por Sandra Escacena, 
+                                        Bruna González, Claudia Placer e Iván Chavero como debutantes y Ana 
+                                        Torrent, Sonia Almarcha, Maru Valdivielso y Leticia Dolera.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id6" .modal-body= "texto">
                             <img class="card-img-top" src="img/6.jpg" alt="">
                         </a>
                      </div>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="id6" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">LIBRANOS DEL MAL</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/6.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis: </strong> 
+                                    Ralph Sarchie no pasa por su mejor momento personal. Un día, 
+                                    este agente de la policía de Nueva York comienza a investigar 
+                                    una serie de crímenes de difícil explicación. Con la ayuda de 
+                                    un sacerdote, experto en exorcismo, se enfrentará a una serie 
+                                    de espíritus demoníacos que parecen ser los culpables de todo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id7" .modal-body= "texto">
@@ -95,11 +249,63 @@
                         </a>
                      </div>
     
+                    <!-- Modal -->
+                    <div class="modal fade" id="id7" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">The Taking of Deborah Logan</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/7.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis: </strong>
+                                        Lo que comienza como un documental médico sobre la degradación 
+                                        de Deborah Logan durante la enfermedad de Alzheimer y las luchas 
+                                        de su hija como cuidadora degenera en un retrato del furor de 
+                                        la demencia en su forma más aterradora. Eventos espeluznantes 
+                                        comienzan a plagar la familia y allegados y una malevolencia 
+                                        indescriptible amenaza con acabar con la cordura de todos ellos. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id8" .modal-body= "texto">
                             <img class="card-img-top" src="img/8.jpg" alt="">
                         </a>
                      </div>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="id8" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">RAW</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/8.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis: </strong>La película trata sobre una familia
+                                         de veterinarios vegetarianos. La pequeña de la casa, Justine, 
+                                         comienza sus estudios universitarios para ser veterinaria como 
+                                         el resto de su familia. Sin embargo, al pasar el día entre vísceras 
+                                         animales, empieza a descubrir su gusto por comer carne cruda, que
+                                         culmina cuando se ve obligada a comerse un hígado crudo en un ritual 
+                                         de iniciación en la facultad. También, como es normal a su edad, 
+                                         veremos el despertar del apetito sexual de Justine. Película francesa 
+                                         escrita y dirigida por Julia Ducournau. La película provocó desmayos en el 
+                                         festival de Toronto por culpa de sus escenas más explícitas. La directora del film 
+                                         fue galardonada con el premio FIPRESCI en el Festival de Cannes. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id9" .modal-body= "texto">
@@ -107,12 +313,76 @@
                         </a>
                      </div>
     
+                    <!-- Modal -->
+                    <div class="modal fade" id="id9" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">LA BRUJA</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/9.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis:</strong> Ambientada en la década de 1930 en Nueva Inglaterra, 
+                                        se encuentra una familia de colonos cristianos compuesta por unos padres y 
+                                        sus cinco hijos. Viven en las cercanías de un bosque en el que, según las 
+                                        creencias, existen fuerzas de la brujería, magia negra y posesiones. De pronto, 
+                                        su hijo más pequeño, recién nacido, desaparece sin dar rastro de vida a la vez 
+                                        que la cosecha de la que vivían deja de crecer. Esto provoca que se peleen unos 
+                                        con otros, llegando a acusar a su hija de bruja, algo de lo que ella se defiende, 
+                                        mientras que en el bosque una fuerza sobrenatural se prepara para atacarles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                     <div class="card">
                         <a href="#" data-toggle="modal" data-target="#id10" .modal-body= "texto">
                             <img class="card-img-top" src="img/10.jpg" alt="">
                         </a>
                      </div>
     
+                    <!-- Modal -->
+                    <div class="modal fade" id="id10" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">GHOSTLAND</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" style="float:left; margin:10px;" src="img/10.jpg" alt=""width ="200" height="350">
+                                    <p><strong>Sinopsis:</strong>
+                                        La nueva película del cineasta francés Pascal Laugier, 'Pesadilla 
+                                        en el infierno (Incident in a Ghost Land)' nos introduce en una 
+                                        historia de terror que aborda la vida de una madre con dos hijas 
+                                        que hereda la casa de su tía, y en la primera noche que la visitan 
+                                        se deberá enfrentar a unos asesinos para asegurar la vida de sus 
+                                        hijas. Cuando ambas sufren este trauma, sus dispares personalidades 
+                                        llegarán al extremo. Una de ellas no pudo superarlo y perdió la razón
+                                         mientras que la otra se ha convertido en una autora de terror con una 
+                                         familia y vida perfectas en Los Ángeles. La película se desarrolla 16 
+                                         años después del trágico suceso, cuando las hijas se reúnen de nuevo 
+                                         en aquella casa y cosas extrañas comienzan a suceder. La película 
+                                         está protagonizada por Crystal Reed, Anastasia Phillips, Mylène 
+                                         Farmer, Emilia Jones y Taylor Hickson.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="CambioB" background-color: red tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <img class="img-fluid" src="img/15.jpg" alt=""width ="300" height="550">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -120,5 +390,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
