@@ -13,4 +13,16 @@ $(document).ready(function () {
     $('#B3').click(function () { 
         $('#CambioB').modal('show')
     });
+
+    $('#B4').click(function () { 
+        $('.container-fluid').css('background-image','url(img/16.jpg)')
+        $('body').css('background-image','url(img/16.jpg)')
+        $('.modal-header').css('background-image','url(img/16.jpg)')
+        
+    });
+
+    $('#B5').click(function () { 
+        $( "img" ).addClass( "rounded-circle" );
+        $( ".card" ).addClass( "rounded-circle" );
+    });
 });
