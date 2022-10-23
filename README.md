@@ -21,7 +21,7 @@ You may also see any lint errors in the console.
 2) If you want to change the data limit you must press enter
 
 
-# MetaPhoto
+# PhotoApi
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
