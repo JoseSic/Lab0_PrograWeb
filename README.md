@@ -23,7 +23,7 @@ You may also see any lint errors in the console.
 
 # PhotoApi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed with [NodeJs](https://nodejs.org/es/).
 
 ## Prerequisites
 
@@ -40,7 +40,5 @@ The npm install downloads packages and it's dependencies of the project
 ### `npm start`
 
 Runs the api in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
-
-The page will reload when you make changes.\
+Open [http://localhost:3001/api/photos](http://localhost:3001/api/photos) to view it in your browser.
 
