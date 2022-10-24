@@ -31,7 +31,7 @@ This project was developed with [NodeJs](https://nodejs.org/es/).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you must run:
 
 ### `npm install`
 
